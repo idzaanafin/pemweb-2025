@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container my-5">
+  <h1 class="mb-4">📊 Dashboard Admin</h1>
+
+  <!-- Statistik -->
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-muted">Total Anggota</h5>
+          <p class="fs-2 fw-bold text-primary">120</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-muted">Total Buku</h5>
+          <p class="fs-2 fw-bold text-primary">250</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-muted">Peminjaman Aktif</h5>
+          <p class="fs-2 fw-bold text-primary">23</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabel Data Peminjaman -->
+  <h2 class="mb-3">📄 Riwayat Peminjaman Terbaru</h2>
+
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered align-middle">
+      <thead class="table-light">
+        <tr>
+          <th>Nama Anggota</th>
+          <th>Judul Buku</th>
+          <th>Tanggal Pinjam</th>
+          <th>Batas Pengembalian</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ahmad Fauzi</td>
+          <td>Kalkulus 2</td>
+          <td>2025-09-01</td>
+          <td>2025-09-15</td>
+          <td><span class="text-primary fw-semibold">Dipinjam</span></td>
+          <td>
+            <a href="#" class="text-primary">Konfirmasi Pengembalian</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Siti Aminah</td>
+          <td>Internet of Things</td>
+          <td>2025-08-20</td>
+          <td>2025-09-05</td>
+          <td><span class="text-success fw-semibold">Dikembalikan</span></td>
+          <td><span class="text-muted">Tidak ada aksi</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
